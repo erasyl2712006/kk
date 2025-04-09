@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="top-bar">
+        <div class="logo">НИП КЕДЕН</div>
+
+        <nav>
+            <ul>
+                <li>Электронное декларирование</li>
+                <li>Сервис ТН ВЭД</li>
+            </ul>
+        </nav>
+
+        <div class="right-section">
+            <span class="exchange-rates">USD: 450 ₸ | EUR: 500 ₸</span>
+            <div class="divider"></div>
+            <span class="date">31.03.2025</span>
+            <div class="divider"></div>
+            <span class="notification">🔔</span>
+            <div class="divider"></div>
+            <div class="user-info">
+                <img src="fe6ca2.jpg" alt="Аватар" class="avatar">
+                <div class="user-text">
+                    <span class="user-name">Иванов И.И.</span>
+                    <p class="verifier">Проверяющий человек</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+</header>
+<hero>
+    <div class="hero">
+        <a href="#" class="btn-back">
+            ←
+        </a>
+        <span class="hero-title">Декларация на товары</span>
+    </div>
+</hero>
+<body>
+    <section class="declaration">
+      <table class="declaration__table">
+        <tr>
+          <td rowspan="12">
+            <div class="declaration__side-cell"></div>
+          </td>
+          <td colspan="4" rowspan="3">
+            <div class="declaration__block declaration-sender">
+              <div class="declaration-sender__header">
+                <span class="declaration-sender__title">2. Отправитель/экспортер</span>
+                <label class="declaration-sender__checkbox-label">
+                  <input type="checkbox" class="declaration-sender__checkbox">
+                  Признак совпадения с графой [14] Декларант
+                </label>
+              </div>
+              <textarea class="declaration-sender__input1"></textarea>
+              <input type="text" class="declaration-sender__input">
+            </div>
+          </td>
+          <td colspan="2">
+            <div class="declaration__field declaration-declaration">
+              <span class="declaration-declaration__title">1. Декларация</span>
+              <div class="declaration-declaration__inputs">
+                <input type="text" class="declaration-declaration__input">
+                <input type="text" class="declaration-declaration__input">
+                <select class="declaration-declaration__select"><option>ЭД</option></select>
+              </div>
+            </div>
+          </td>
+          <td colspan="2" rowspan="2">
+            <div class="declaration__block declaration-code">
+              <span class="declaration-code__title">A</span>
+            
+              <div class="declaration-code__inputs-row">
+                <input type="text" class="declaration-code__input">
+                <select class="declaration-code__select"><option>251224</option></select>
+                <input type="text" class="declaration-code__input">
+              </div>
+            
+              <span class="declaration-code__hint">СПРАВОЧНИКИ И КУРСЫ ВАЛЮТ ПО СОСТОЯНИЮ НА УКАЗАННУЮ ДАТУ</span>
+            
+              <label class="declaration-code__checkbox-label">
+                <input type="checkbox" class="declaration-code__checkbox">
+                Пониженные ставки ВТО
+              </label>
+            </div>            
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="declaration__field declaration-form-type">
+              <span class="declaration-form-type__title">3. Формы</span>
+              <input type="text" class="declaration-form-type__input">
+            </div>
+          </td>          
+          <td>
+            <div class="declaration__field declaration-department">
+              <span class="declaration-department__title">4. Отг. спец.</span>
+              <div class="declaration-department__inputs-row">
+                <input type="text" class="declaration-department__input">
+                <input type="text" class="declaration-department__input">
+              </div>
+            </div>
+          </td>          
+        </tr>
+        <tr>
+          <td>
+            <div class="declaration__field declaration-total-goods">
+              <span class="declaration-total-goods__title">5. Всего т-ов</span>
+              <input type="text" class="declaration-total-goods__input">
+            </div>
+          </td>
+          <td>
+            <div class="declaration__field declaration-total-places">
+              <span class="declaration-total-places__title">6. Кол. мест</span>
+              <input type="text" class="declaration-total-places__input">
+            </div>
+          </td>
+          <td colspan="2">
+            <div class="declaration__field declaration-reference">
+              <span class="declaration-reference__title">7. Справочный номер</span>
+              <input type="text" class="declaration-reference__input">
+              <label class="declaration-reference__checkbox-label">
+                <input type="checkbox" class="declaration-reference__checkbox">
+                Признак недропользователья
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" rowspan="3">
+            <div class="declaration__block declaration-recipient">
+              <div class="declaration-recipient__header">
+                <span class="declaration-recipient__title">8. Получатель</span>
+                <label class="declaration-recipient__checkbox-label">
+                  <input type="checkbox" class="declaration-recipient__checkbox">
+                  Признак совпадения с графой [14] Декларант
+                </label>
+              </div>
+              <textarea class="declaration-recipient__input1"></textarea>
+              <input type="text" class="declaration-recipient__input">
+            </div>
+          </td>
+          <td colspan="4" rowspan="2">
+            <div class="declaration__block declaration-financial">
+              <div class="declaration-financial__header">
+                <span class="declaration-financial__title">9. Лицо, ответственное за фин. урегулирование</span>
+                <label class="declaration-financial__checkbox-label">
+                  <input type="checkbox" class="declaration-financial__checkbox">
+                  Признак совпадения с графой [14] Декларант
+                </label>
+              </div>
+              <input type="text" class="declaration-financial__input1">
+              <input type="text" class="declaration-financial__input">
+            </div>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td>
+            <div class="declaration__field declaration-sender-country">
+              <span class="declaration-sender-country__title">10. Стр. 1-но наз.</span>
+              <input type="text" class="declaration-sender-country__input">
+            </div>
+          </td>
+          <td>
+            <div class="declaration__field declaration-trade-country">
+              <span class="declaration-trade-country__title">11. Тор. страна</span>
+              <input type="text" class="declaration-trade-country__input">
+            </div>
+          </td>
+          <td>
+            <div class="declaration__field declaration-total-value">
+              <span class="declaration-total-value__title">12. Общая таможенная стоимость</span>
+              <div class="declaration-total-value__inputs-row">
+                <input type="text" class="declaration-total-value__input">
+                <select class="declaration-total-value__select"><option></option></select>
+              </div>
+            </div>
+          </td>          
+          </td>
+          <td>
+            <div class="declaration__field declaration-field-13">
+              <span class="declaration-field-13__title">13.</span>
+              <input type="text" class="declaration-field-13__input">
+            </div>
+          </td>
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="2">
+              <div class="declaration__block declaration__block--declarant">
+                <span class="declaration__title">14. Декларант</span>
+                <textarea class="block--declarant__input1"></textarea>
+                <input type="text" class="block--declarant__input">
+              </div>
+            </td>
+            <td colspan="2">
+              <div class="declaration__block declaration__block--country-of-dispatch">
+                <span class="declaration__title">15. Страна отправления</span>
+                <select class="declaration__select">
+                  <option>Абхазия</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="declaration__block declaration__block--country-code-dispatch">
+                <span class="declaration__title">15а Код страны отпр.</span>
+                <input type="text" class="declaration__input">
+              </div>
+            </td>
+            <td>
+              <div class="declaration__block declaration__block--country-code-destination">
+                <span class="declaration__title">17a Код страны назн.</span>
+                <input type="text" class="declaration__input">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="declaration__block declaration__block--country-of-origin">
+                <span class="declaration__title">16. Страна происхождения</span>
+                <select class="declaration__select">
+                  <option>Абхазия</option>
+                </select>
+              </div>
+            </td>
+            <td colspan="2">
+              <div class="declaration__block declaration__block--country-of-destination">
+                <span class="declaration__title">17. страна назначения</span>
+                <select class="declaration__select">
+                  <option>Абхазия</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="declaration__block declaration__block--vehicle-id">
+                <span class="declaration__title">18. Идентификация и страна регист-и и тран. ср-ва при отправлю/прибытии</span>
+                <div class="declaration__inputs">
+                  <input type="text" class="declaration__input--large">
+                  <input type="text" class="declaration__input--small">
+                </div>
+              </div>
+            </td>       
+            <td>
+              <div class="declaration__block declaration__block--container">
+                <span class="declaration__title-container">19. Контейнер</span>
+                <input type="value" class="declaration__input-container">
+              </div>
+            </td>
+            <td colspan="4">
+              <div class="declaration__block declaration__block--delivery-terms">
+                <span class="declaration__title">20. Условия поставки</span>
+                <div class="declaration__inputs">
+                  <select class="declaration__select-terms">
+                    <option>CFR</option>
+                  </select>
+                  <input type="text" class="declaration__input">
+                </div>
+              </div>
+            </td>            
+          </tr>
+          <tr>
+            <td colspan="4">
+              <div class="declaration__block declaration__block--border-vehicle-id">
+                <span class="declaration__title">21. Идентификация и страна регистрации активного трансп. средства на границе</span>
+                <div class="declaration__inputs">
+                  <input type="text" class="declaration__input-A">
+                  <input type="text" class="declaration__input-B">
+                </div>
+              </div>
+            </td>            
+            <td colspan="2">
+              <div class="declaration__block declaration__block--currency-total">
+                <span class="declaration__title">22. Валюта и общая сумма по счету</span>
+                <div class="declaration__inputs">
+                  <select class="declaration__select">
+                    <option>USD</option>
+                  </select>
+                  <input type="value" class="declaration__input">
+                </div>
+              </div>
+            </td>            
+            <td>
+              <div class="declaration__block declaration__block--currency-rate">
+                <span class="declaration__title-rate">23. Курс валюты</span>
+                <input type="text" class="declaration__input">
+              </div>
+            </td>
+            <td>
+              <div class="declaration__block declaration__block--deal-type">
+                <span class="declaration__title">24. Хар.</span>
+                <span class="declaration__title">Особен.</span>
+                <div class="declaration__inputs">
+                  <select class="declaration__select">
+                    <option>001</option>
+                  </select>
+                  <select class="declaration__select">
+                    <option>00</option>
+                  </select>
+                </div>
+              </div>
+            </td>            
+          </tr>
+          <tr>
+            <td>
+              <div class="declaration__block declaration__block--border-transport">
+                <span class="declaration__title">25. Вид транс. на гр.</span>
+                <select class="border-declaration__select">
+                  <option>10</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="declaration__block declaration__block--internal-transport">
+                <span class="declaration__title">26. Вид транс. внутри</span>
+                <select class="transport-declaration__select">
+                  <option>20</option>
+                </select>
+              </div>
+            </td>
+            <td colspan="2">
+              <div class="declaration__block declaration__block--loading-place">
+                <span class="declaration__title">27. Место погрузки/разгрузки</span>
+                <input type="text" class="place-declaration__input">
+              </div>
+            </td>
+            <td colspan="4">
+              <div class="declaration__block declaration__block--bank-info">
+                <span class="declaration__title">28. Финансовые и банковский сведения</span>
+                <input type="text" class="bank-declaration__input">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="declaration__block declaration__block--entry-org">
+                <span class="declaration__title">29. Орган вьезда/выезда</span>
+                <input type="text" class="org-declaration__input">
+              </div>
+            </td>
+            <td colspan="2">
+              <div class="declaration__block declaration__block--goods-location">
+                <span class="declaration__title">30. Местонахождение товаров</span>
+                <input type="text" class="location-declaration__input">
+              </div>
+            </td>
+            <td colspan="4">
+              <div class="pusto-input">
+                <input type="text" class="pusto-declaration__input">
+              </div>
+            </td>
+          </tr>
+            <tr>
+                <td colspan="9">
+                    <div class="goods-header">
+                      <div class="goods-header__controls">
+                        <div class="goods-header__left">
+                          <button class="goods-header__button goods-header__button--white">📄 Дублировать товар</button>
+                          <button class="goods-header__button goods-header__button--icon">🗑</button>
+                          <select class="goods-header__select">
+                            <option>Товар 1</option>
+                          </select>
+                          <button class="goods-header__button goods-header__button--nav">&lt;</button>
+                          <span class="goods-header__page-number">1</span>
+                          <button class="goods-header__button goods-header__button--nav">&gt;</button>
+                        </div>                                    
+                        <div class="goods-header__right">
+                          <button class="goods-header__button goods-header__button--import">⬇ Импорт из файла</button>
+                          <button class="goods-header__button goods-header__button--add">➕ Добавить товар</button>
+                        </div>
+                      </div>                      
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="5">
+                  <div class="gruz"> 31.грузовые места и описание товаров
+                  </div>
+                  </td>
+                <td rowspan="5" colspan="3">
+                    <div class="goods-info">
+                        Маркировка и количество-Номера контейнеров-Количество и отличит.особен.
+                        <textarea class="goods-info__input"></textarea>
+                    </div>
+                </td>
+                <td rowspan="5">
+                    <div class="goods-number">
+                        32.Товар
+                        <br>
+                        <input class="goods-number__input" type="text">
+                        <select class="goods-number__select">
+                            <option>1</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                  <div class="goods-code-1">
+                    <span class="goods-code-tittle"> 33. Код товара</span>
+                    <input class="goods-code__input" type="text">
+                  </div>
+                </td>
+                <td colspan="2">
+                  <div class="o-box">O
+                  </div>
+                </td>
+                <td>
+                  <div class="goods-dop-code">
+                    <span class="dop-code-tittle"> Доп.код </span>
+                    <input class="goods-addcode__input" type="text">
+                  </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="goods-code">
+                        <span class="goods-code-code-tittle"> 34a 34b </span>
+                        <br>
+                        <input class="goods-code__input-1" type="text">
+                        <input class="goods-code__input-1" type="text">
+                    </div>
+                </td>
+                <td colspan="2">
+                  <div class="goods-weight">
+                    <span class="weight-tittle"> 35. Вес брутто (КГ) </span>
+                    <input class="goods-weight__input" type="text">
+                  </div>
+                </td>
+                <td>
+                    <div class="goods-pref">
+                        <span class="pref-tittle"> 36. Преференция </span>
+                        <br>
+                        <input class="goods-pref__input" type="text">
+                        <input class="goods-pref__input" type="text">
+                        <input class="goods-pref__input" type="text">
+                        <input class="goods-pref__input" type="text">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="goods-procedure">
+                        <span class="procedure-tittle"> 37.Процедура </span>
+                        <br>
+                        <input class="goods-procedure__input" type="text">
+                        <input class="goods-procedure__input" type="text">
+                        <input class="goods-procedure__input" type="text">
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="goods-net">
+                        <span class="net-tittle"> 38. Вес нетто(КГ) </span>
+                        <br>
+                        <input class="goods-net__input" type="text">
+                        <input class="goods-net__input" type="text">
+                    </div>
+                </td>
+                <td>
+                  <div class="goods-quota">
+                    <span class="quota-tittle"> 39. Квота </span>
+                    <input class="goods-quota__input" type="text">
+                  </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="4">
+                  <div class="goods-doc">
+                    <span class="doc-tittle"> 40. Общая декларация/предшествующий документ </span>
+                    <input class="goods-doc__input" type="text">
+                  </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="goods-unit">
+                        <span class="unit-tittle"> 41. Допол. единицы </span>
+                        <br>
+                        <input class="goods-unit__input" type="text">
+                        <input class="goods-unit__input" type="text">
+                    </div>
+                </td>
+                <td colspan="2">
+                  <div class="goods-price">
+                    <span class="price-tittle"> 42. Цена товара </span>
+                    <input class="goods-price__input" type="text">
+                  </div>
+                </td>
+                <td>
+                    <div class="goods-mos">
+                        <span class="mos-tittle"> 43. Код МОС </span>
+                        <br>
+                        <input class="goods-mos__input" type="text">
+                        <input class="goods-mos__input" type="text">
+                        <input class="goods-mos__input" type="text">
+                    </div>
+                </td>
+            </tr>            
+            <tr>
+                <td rowspan="2">
+                  <div class="goods">
+                    44. Дополн. информация/Представл. Документы</td>
+                  </div>
+                <td rowspan="2" colspan="4">
+                    <div class="goods-info-extra">
+                        <textarea class="goods-info-extra__input"></textarea>
+                    </div>
+                </td>
+                <td rowspan="2" colspan="2">
+                  <div class="pusto"></div>
+                </td>
+                <td colspan="2">
+                  <div class="goods-customs-value">
+                    45. Таможенная стоимость
+                    <input class="goods-customs-value__input" type="text">
+                  </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                  <div class="goods-stat-value">
+                    46. Статистическая стоимость
+                    <input class="goods-stat-value__input" type="text">
+                  </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3">
+                  <div class="ischislenie">
+                    47. Исчисление платежей</td>
+                  </div>
+                <td rowspan="3" colspan="4">
+                  <div class="goods-paymentdiv">
+                    <table class="goods-payments">
+                        <tr class="goods-payments__row goods-payments__row--head">
+                            <th>№</th>
+                            <th>Вид</th>
+                            <th>Основание начисления</th>
+                            <th>Ставка</th>
+                            <th>Сумма</th>
+                            <th>СП</th>
+                        </tr>
+                        <tr class="goods-payments__row">
+                            <td>1</td><td>1010</td><td>11076</td><td>6 МРП</td><td>11076</td><td>ИУ</td>
+                        </tr>
+                        <tr class="goods-payments__row">
+                            <td>1</td><td>1010</td><td>11076</td><td>6 МРП</td><td>11076</td><td>ИУ</td>
+                        </tr>
+                        <tr class="goods-payments__row">
+                            <td>1</td><td>1010</td><td>11076</td><td>6 МРП</td><td>11076</td><td>ИУ</td>
+                        </tr>
+                        <tr class="goods-payments__row">
+                            <td>1</td><td>1010</td><td>11076</td><td>6 МРП</td><td>11076</td><td>ИУ</td>
+                        </tr>
+                    </table>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <div class="goods-deferment">
+                    48. Отсрочка платежей
+                    <input class="goods-deferment__input" type="text">
+                    </div>
+                </td>
+                <td colspan="2">
+                  <div class="goods-storage">
+                    49. Реквизиты склада
+                    <input class="goods-storage__input" type="text">
+                  </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2" colspan="4">
+                    <div class="goods-calculation">
+                        В ПОДРОБНОСТИ ПОДСЧЕТА
+                        <textarea class="goods-calculation__input"></textarea>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr></tr>
+            
+            <tr>
+                <td rowspan="3">
+                  <div class="pred">51. Предполагаемые органы (и страна) транзита</td>
+                  </div>
+                <td rowspan="2" colspan="4">
+                    <div class="goods-transit">
+                        50.
+                        <textarea class="goods-transit__input"></textarea>
+                    </div>
+                </td>
+                <td rowspan="2" colspan="4">
+                    <div class="goods-transit">
+                        C
+                        <textarea class="goods-transit__input"></textarea>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr></tr>
+            
+            <tr>
+                <td>
+                    <div class="goods-transit__field">
+                        <input type="text">
+                    </div>
+                </td>
+                <td>
+                    <div class="goods-transit__field">
+                        <input type="text">
+                    </div>
+                </td>
+                <td>
+                    <div class="goods-transit__field">
+                        <input type="text">
+                    </div>
+                </td>
+                <td>
+                    <div class="goods-transit__field">
+                        <input type="text">
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="goods-transit__field">
+                        <input type="text">
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div class="goods-transit__field">
+                        <input type="text">
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="5">
+                  <div class=" garant">
+                    52. Гарантия недействительна декларация
+                    <input class="goods-invalid__input" type="text">
+                  </div>
+                </td>
+                <td colspan="4">
+                  <div class="organ">
+                    53. Орган (и страна) назначения
+                    <input class="goods-destination__input" type="text">
+                </td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3" colspan="5">
+                    <div class="goods-agent">
+                        D
+                        <br>
+                        <label>
+                            <input class="goods-agent__checkbox" type="checkbox">
+                            Без таможенного представителя
+                        </label>
+                    </div>
+                </td>
+                <td rowspan="3" colspan="4">
+                    <div class="goods-place-date">
+                        54. Место и Дата
+                        <textarea class="goods-place-date__input"></textarea>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+            
