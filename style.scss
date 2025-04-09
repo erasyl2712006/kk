@@ -1,0 +1,116 @@
+$font-stack: 'Segoe UI', sans-serif;
+$primary-color: #004080;
+$border-color: #ccc;
+$input-padding: 6px 10px;
+$input-border: 1px solid $border-color;
+
+// 🧱 Общие стили
+body {
+  font-family: $font-stack;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.declaration {
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    td {
+      border: 1px solid $border-color;
+      padding: 5px;
+      vertical-align: top;
+    }
+  }
+
+  &__side-cell {
+    background-color: #e0e0e0;
+    width: 10px;
+  }
+
+  &__block, &__field {
+    padding: 10px;
+    border: 1px solid $border-color;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    color: $primary-color;
+  }
+
+  &__input,
+  &__select {
+    padding: $input-padding;
+    border: $input-border;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+}
+
+// 📦 Отдельные блоки
+.declaration-sender,
+.declaration-recipient,
+.declaration-financial {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__checkbox-label {
+    font-size: 12px;
+    color: #333;
+  }
+
+  &__input {
+    @extend .declaration__input;
+  }
+}
+
+.declaration-declaration,
+.declaration-code,
+.declaration-form-type,
+.declaration-department,
+.declaration-total-goods,
+.declaration-total-places,
+.declaration-reference,
+.declaration-sender-country,
+.declaration-trade-country,
+.declaration-total-value,
+.declaration-field-13 {
+  &__title {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  &__input,
+  &__select {
+    @extend .declaration__input;
+  }
+
+  &__checkbox-label {
+    font-size: 12px;
+  }
+
+  &__hint {
+    font-size: 11px;
+    color: #666;
+  }
+}
